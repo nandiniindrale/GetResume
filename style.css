@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color:purple;
+	--text-color:black;
+}
+html {
+	font-size: 10px;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color:grey;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top:20px;
+    margin-bottom:20px;
+    color: white;
+	
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.item_preTitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 300;
+}
+
+.item_title {
+	margin-top:30px;
+	font-size: 1.6rem;
+	color:black;
+	font-weight: 500;
+	margin: 0.8rem 0;
+	font-weight: bold;
+}
+
+.item_subtitle {
+	font-size: 1.4rem;
+	color: var(--text-color);
+	font-weight: 400;
+}
+.coding_title{
+	margin-top:30px;
+	font-size: 1.6rem;
+	color:black;
+	font-weight: 500;
+	margin: 0.8rem 0;
+	font-weight: bold;
+}
+.coding_title:hover{
+	color:blue;
+}
+.project_title{
+	margin-top:30px;
+	font-size: 1.6rem;
+	color:blue;
+	font-weight: 500;
+	margin: 0.8rem 0;
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background:white;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+	}
+}
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+.group-1,
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.profile {
+		margin-bottom: 0;
+	}
+	
+}
+
+/* profile */
+.profile_container {
+	display: flex;
+	gap: 2rem;
+}
+.links{
+    margin-top:20px;
+
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.link-list li {
+    margin: 0;
+}
+
+.link-list a {
+    text-decoration: none;
+    color:purple; 
+    margin-right:25px; 
+    margin-left:25px;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+.coding{
+	color:black;
+}
+.name{
+	color:blue;
+	margin-left:25px; 
+	margin-top:10px;
+    font-size: 20px;
+}
+.profile_name_firstName {
+	color:black;
+	font-weight: 600;
+	font-size: clamp(1.0rem, 7vw, 3rem);
+	text-transform: uppercase;
+    margin-left:25px; 
+	font-size: 40px;
+}
+.profile_title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color:blue;
+}
+.downloadBtn {
+	display: block;
+	text-decoration: underline;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	color:purple;
+}
+.downloadBtn:hover {
+    color:Blue;
+}
+@media only screen and (max-width: 768px) {
+	.profile_container {
+		flex-direction: column;
+	}
+}
+
+/* Expertise */
+.skills_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+/* Experience  */
+.Experience_item {
+	margin-top: 2rem;
+}
+.Experience_name {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color:black;
+}
+
+/* exp */
+.exp_item {
+	margin-top: 2rem;
+}
+
+/* coding */
+.coding_item {
+	margin-top: 2rem;
+	color:black;
+}
+
+
+/* certification */
+.certification_item {
+	margin-top: 2rem;
+	color:black;
+}
+
+/* Interests */
+.interest_items {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+.interest_item {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: var(--text-color);
+}
+.interest_item svg {
+	width: 2rem;
+}
+
+
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+@media only screen and (max-width: 768px) {
+	hr {
+		margin: 0 auto;
+	}
+}
